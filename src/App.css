@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  align-items: center;
+  
+}
+
+.form-container {
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  height: 100;
+}
+
+form table input {
+  height: 30px; border-radius: 20px;
+  margin: 0 0 10px 0;
+  padding-left: 20px;
+  outline: none;
+}
+
+.button {
+  margin: 0 10px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+.table>:not(caption)>*>*{
+  background-color: transparent !important;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table thead th {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+table tbody tr:hover {
+  transition: background-color 0.3s;
+}
+
+table tbody td {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.action-button {
+  margin: 0 10px;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.action-button.delete:hover {
+  background: red;
+  color: rgb(255, 255, 255);
+}
+
+.action-button.edit {
+  color: white;
+}
+
+input td{
+  color: #ffffff;
+}
